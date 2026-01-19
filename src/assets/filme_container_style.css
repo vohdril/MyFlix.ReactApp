@@ -1,0 +1,296 @@
+.filme-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    overflow-y: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+
+.filme-card:hover {
+    transform: scale(1.01);
+    z-index: 10000;
+}
+
+.filme-card {
+    border-radius: 0.4rem;
+    margin: 20px 8px 30px 9px;
+    transition: all 0.2s;
+    background: rgb(88, 88, 88);
+}
+
+.filme-card-info-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    text-overflow: ellipsis;
+    flex-flow: column wrap;
+    background: rgb(88, 88, 88);
+    border-radius: 0.4rem;
+
+
+}
+
+.filme-poster-card {
+    flex: 1 0 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filme-card-card>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+.filme-titulo {
+    flex: 0 0 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & * {
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        width: 166px;
+        text-overflow: ellipsis;
+    }
+
+}
+
+
+
+
+.filme-detalhes {
+    display: flex;
+    flex: 0 0 10%;
+    padding: 0px 4px;
+    height: 70px;
+    min-height: 25px;
+    margin: 5px;
+
+    width: 100%;
+
+    & div {
+
+        flex-grow: 1;
+        text-align: center;
+        line-height: 50px;
+    }
+}
+
+.img-poster {
+    width: 90%;
+    height: 90%;
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+
+}
+
+.badge-assistido {
+    position: relative;
+    top: -0.6rem;
+    left: 21rem;
+    font-size: 12px;
+    border: 0;
+    padding: 0.5rem;
+    margin: 0;
+    cursor: pointer;
+    border-radius: 1rem;
+    display: flex;
+    width: 26px;
+    text-align: center;
+    padding: 6px 9px;
+    background: rgb(86, 120, 86);
+
+    /* &:hover {
+        background: rgba(0, 0, 0, 0.2);
+    } */
+}
+
+@media only screen and (max-width: 600px) {
+    .filme-card {
+
+        width: 200px;
+        height: 300px;
+    }
+
+    .filme-titulo div {
+
+        margin: 0px;
+        height: 46px;
+        font-size: 15px;
+
+
+    }
+
+    .container {
+        display: flex;
+        height: 62vh;
+        width: 100%;
+    }
+
+    #root {
+        display: flex;
+        height: 100vh;
+        flex-flow: column;
+    }
+}
+
+.badge-assistido {
+    left: 11.5rem
+}
+
+.filme-detalhes {
+    & div {
+
+        flex-grow: 1;
+        text-align: center;
+        line-height: 22px;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+
+
+
+    .filme-titulo div {
+
+        margin: 0px;
+        height: 44px;
+        font-size: 16px;
+
+
+    }
+
+
+    .filme-card {
+
+        width: 200px;
+        height: 300px;
+    }
+
+    .badge-assistido {
+        left: 11.5rem
+    }
+
+    .filme-detalhes {
+        & div {
+
+            flex-grow: 1;
+            text-align: center;
+            line-height: 22px;
+        }
+    }
+
+
+}
+@media only screen and (min-width: 6px) {
+
+
+
+
+    .filme-titulo div {
+
+        margin: 0px;
+        height: 44px;
+        font-size: 16px;
+
+
+    }
+
+
+    .filme-card {
+
+        width: 200px;
+        height: 300px;
+    }
+
+    .badge-assistido {
+        left: 11.5rem
+    }
+
+    .filme-detalhes {
+        & div {
+
+            flex-grow: 1;
+            text-align: center;
+            line-height: 22px;
+        }
+    }
+
+
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .filme-card {
+
+        width: 200px;
+        height: 300px;
+    }
+
+    .badge-assistido {
+        left: 11.5rem
+    }
+
+    .filme-detalhes {
+        & div {
+
+            flex-grow: 1;
+            text-align: center;
+            line-height: 22px;
+        }
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .filme-card {
+
+        width: 350px;
+        height: 600px;
+    }
+
+    .badge-assistido {
+        left: 21rem
+    }
+
+    .filme-titulo {
+        flex: 0 1 auto;
+        height: 40px;
+
+        &* {
+            margin: 0px;
+            height: 25px;
+            font-size: 20px;
+
+        }
+    }
+
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

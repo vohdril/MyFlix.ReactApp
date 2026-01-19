@@ -1,0 +1,98 @@
+.filme-container-detalhes {
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+}
+
+.filme-poster {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.w {
+    width: auto;
+
+    &.large {
+        width: 100%;
+
+    }
+}
+
+.form-label {
+
+
+    font-size: 22px;
+
+}
+
+.form-field {
+    display: block;
+    height: 40px;
+    font-size: 22px;
+    margin: 0px 0px 2px 0px;
+
+}
+
+.form-salvar {
+    position: absolute;
+    bottom: 80px;
+    right: 14px;
+    height: 40px;
+    width: 120px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.3em 1em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+
+.form-excluir{
+
+    position: absolute;
+    bottom: 90px;
+    right: 322px;
+    height: 40px;
+    width: 120px;
+}
+
+.filme-container-left {
+    height: 100%;
+    padding: 0.5rem 0.5rem;
+    border: 1px solid transparent;
+    width: 3rem;
+    transition: width 300ms;
+    flex: 5;
+
+
+
+}
+
+.filme-container-right {
+    flex: 4;
+    padding: 0.5rem 0.5rem;
+    display: flex;
+    flex-flow: row-reverse
+}
+
+form {
+    height: 100%;
+    color: black
+}
+
+label {
+    color: white;
+    margin-top: 10px;
+}
+
+form input{
+    margin-bottom: 10px;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
